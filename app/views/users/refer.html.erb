@@ -43,7 +43,7 @@
     <div class="page-content">
         <h2 class="callout">Rewards Meter</h2>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+            <li class="title"><p class="friends">Number of People Referred</p><p class="rewards">What's Your Reward?</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
