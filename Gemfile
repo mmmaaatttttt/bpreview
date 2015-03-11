@@ -9,6 +9,8 @@ gem 'pg'
 
 gem 'activeadmin'
 
+gem 'figaro', '~> 0.7.0'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
