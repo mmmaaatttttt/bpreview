@@ -1,20 +1,35 @@
 <div class="hero">
-    <p class="large brandon">Harry&#8217;s is live</p>
-    <p class="small brandon">Respecting the Face and Wallet<br>Since Like...Right Now.</p>
+    <h1 id="mainTitle">Common Core Unit <span class="boldwhite">Blueprints</span></h1>
 </div>
-
+<div class="home-hero">
+    <div id="introCopy" class="container">
+        <div class="col-sm-10 col-sm-centered">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p>The Common Core Standards for Mathematics establish new and more rigorous learning objectives, however the standards do not specify how they should be organized. With the generous support of the William and Flora Hewlett Foundation, Illustrative Mathematics and Mathalicious have organized the Common Core standards into instructional units so that educators at the state, district, or school level don’t have to.</p>
+                </div>
+                <div class="col-sm-6">
+                    <p>While these Unit Blueprints organize the standards, they are not intended to serve as a comprehensive curriculum. Instead, they offer expert guidance for how to organize the standards, and act as a framework that can help educators successfully transition to the Common Core.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="form-wrap clearfix <%= "ended" if Rails.application.config.ended %>">
     <% if Rails.application.config.ended %>
-        <p class="thanks brandon">THANK YOU FOR PARTICIPATING<br>IN OUR PRE-LAUNCH.</p>
-        <p class="compiling brandon">WE ARE COMPILING REWARDS RIGHT NOW AND WILL EMAIL<br/>COUPON CODES TO ALL RECIPIENTS IN THE NEXT DAY OR TWO</p>
-        <p class="go-to brandon">In the meantime, head to  <a href="http://www.harrys.com/">WWW.HARRYS.COM</a></p>
-        <p class="again brandon">Thank You Again!</p>
+        <div class="container">
+            <div id="itsOver" class="col-sm-7 col-sm-centered">
+                <p>Thanks for checking out our pre-launch site! We're tallying up invitations so that we can send out rewards. If you are eligible for one of our rewards, you'll be hearing from us soon!</p>
+                <p>In the meantime, please feel free to check out the live <a href="#">Blueprints</a> site.</p>
+                <p>Thanks again!</p>
+            </div>
+        </div>
     <% else %>
         <div class="key"></div>
-        <p class="byline brandon">Be the first to know</p>
+        <p class="byline">Teacher? Administrator? Curriculum Developer? Be the first to know when the Blueprints are live! </p>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
-            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email brandon" %>
-            <input class="submit brandon" name="commit" type="submit" value="Step Inside" />
+            <%= f.text_field :email, :placeholder => "Enter Email", :class => "email form-control" %>
+            <input class="submit" name="commit" type="submit" value="Invite Me!" />
         <% end %>
     <% end %>
 </div>
