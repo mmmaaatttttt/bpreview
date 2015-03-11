@@ -22,9 +22,19 @@
         <%= csrf_meta_tags %>
 </head>
 <body id="<%= @bodyId %>">
+<div class="wrapper">
+    <div class="hero">
+        <h1 id="mainTitle">Common Core Unit <span class="boldwhite">Blueprints</span></h1>
+    </div>
 
-<%= yield %>
-
-
+    <%= yield %>
+    <div class="push"></div>
+</div>
+<footer class="content-info">
+    <div class="pull-right">
+        <span>Copyright &copy; 2015 Common Core Unit Blueprints. All Rights Reserved.</span>
+        <a id="privacy-policy" href="/privacy-policy" target="_blank"><strong>Privacy Policy</strong></a>
+    </div>
+</footer>
 </body>
 </html>
