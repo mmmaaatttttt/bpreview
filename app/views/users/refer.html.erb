@@ -45,7 +45,7 @@
         <ul class="products clearfix">
             <li class="title"><p class="friends">Number of People Referred</p><p class="rewards">What's Your Reward?</p></li>
             <% stops.each do |stop| %>
-                <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
+                <li class="product <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
                     <div class="sep"></div>
                     <p><%= stop["html"].html_safe %></p>

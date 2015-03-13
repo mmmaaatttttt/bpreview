@@ -199,7 +199,6 @@ html, body {
 
 #refer .share-wrap .copy-link{
 	border: 1px solid #D1D0C7;
-	background: #FFF;
 	padding: 10px 0;
 	width: 320px;
 	text-transform: none;
@@ -271,20 +270,21 @@ html, body {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width:100%;
 }
 
 #refer .prizes .progress .mover .bar{
 	background-color:#EBA716;
-	width: 175px;
+	width: 20%;
 	height: 4px;
 	-webkit-background-size: 1px 4px;
 	background-size: 1px 4px;
 }
 
-#refer .prize-two .progress .mover .bar{ width: 312px; }
-#refer .prize-three .progress .mover .bar{ width: 566px; }
-#refer .prize-four .progress .mover .bar{ width: 820px; }
-#refer .prize-five .progress .mover .bar{ width: 1120px; }
+#refer .prize-two .progress .mover .bar{ width: 30%; }
+#refer .prize-three .progress .mover .bar{ width: 50%; }
+#refer .prize-four .progress .mover .bar{ width: 70%; }
+#refer .prize-five .progress .mover .bar{ width: 90%; }
 
 
 #refer .prizes ul.products{
@@ -293,6 +293,7 @@ html, body {
 	margin-top: 30px;
 	position: relative;
 	z-index: 1;
+	display: table;
 }
 
 #refer .prizes .products li.title{
@@ -300,9 +301,9 @@ html, body {
 	color: #1a2944;
 	font-weight: 400;
 	font-size: 14px;
-	float: left;
-	margin-right: 68px;
-	width: 175px;
+	display: table-cell;
+	text-align:center;
+	width: 20%;
 }
 
 #refer .prizes .products li.title .friends{
@@ -318,9 +319,9 @@ html, body {
 #refer .prizes .products li.product{
 	height: 100%;
 	color: #074E6F;
-	width: 125px;
-	margin-right: 129px;
-	float: left;
+	display: table-cell;
+	width: 20%;
+	text-align: center;
 	position: relative;
 }
 
