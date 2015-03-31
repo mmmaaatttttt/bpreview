@@ -13,6 +13,7 @@ gem 'activeadmin'
 gem 'figaro', '~> 0.7.0'
 
 gem "twitter-bootstrap-rails"
+gem "therubyracer"
 
 
 # Gems used only for assets and not required
@@ -42,7 +43,7 @@ gem 'unicorn'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
