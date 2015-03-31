@@ -28,7 +28,8 @@ class UsersController < ApplicationController
                 )
             end
 
-            if cur_ip.count > 2
+            if cur_ip.count > 10
+                flash[:danger] = "Sorry, this IP address has already been used!"
                 return redirect_to root_path
             else
                 cur_ip.count = cur_ip.count + 1

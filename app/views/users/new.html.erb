@@ -24,6 +24,12 @@
     <% else %>
         <div class="key"></div>
         <p class="byline">Teacher? Administrator? Curriculum Developer? Be the first to know when the Blueprints are live! </p>
+        <% flash.each do |key, value| %>
+            <div class="alert alert-<%= key %>">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <%= value %>
+            </div>
+        <% end %>
         <%= form_for @user, :url => { :action => "create" } do |f| %>
             <%= f.text_field :email, :placeholder => "Enter Email", :class => "email form-control" %>
             <input class="submit" name="commit" type="submit" value="Invite Me!" />

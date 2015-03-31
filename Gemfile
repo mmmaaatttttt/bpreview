@@ -12,6 +12,8 @@ gem 'activeadmin'
 
 gem 'figaro', '~> 0.7.0'
 
+gem "twitter-bootstrap-rails"
+
 
 # Gems used only for assets and not required
 # in production environments by default.
