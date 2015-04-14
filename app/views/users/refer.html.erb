@@ -5,7 +5,6 @@
                 <div id="thanks" class="col-sm-6">
                     <h3>Thanks for signing up!</h3>
                     <p>Want to keep the good times rolling? Spread the word!</p>
-                    <p>Share your unique link via email, Facebook, or Twitter.</p>
                     <p>When your friends sign up with your link, everyone wins. Especially you.</p>
                 </div>
                 <div class="col-sm-6">
@@ -41,27 +40,6 @@
 %>
 <div class="prizes <% if found %>prize-<%= found["class"] %><% end %>">
     <div class="page-content">
-        <h2 class="callout">Rewards Meter</h2>
-        <ul class="products clearfix">
-            <li class="title"><p class="friends">Number of People Referred</p><p class="rewards">What's Your Reward?</p></li>
-            <% stops.each do |stop| %>
-                <li class="product <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
-                    <div class="circle"><%= stop["count"] %></div>
-                    <div class="sep"></div>
-                    <p><%= stop["html"].html_safe %></p>
-
-                    <div class="tooltip">
-                        <img src="<%= stop["image"] %>" height="254">
-                    </div>
-                </li>
-            <% end %>
-        </ul>
-
-        <div class="progress">
-            <div class="mover">
-                <div class="bar clearfix"></div>
-            </div>
-        </div>
 
         <% 
             words = referrals_count == 1 ? 'friend has' : 'friends have'
@@ -69,9 +47,9 @@
 
         <p class="place">
         <% if referrals_count == 0 %>
-            <span>No</span> friends have joined...Yet!
+            <span>No</span> friends have signed up...Yet!
         <% else %>
-            <span><%= referrals_count %></span> <%= words %> joined. Nice work!
+            <span><%= referrals_count %></span> <%= words %> signed up. Nice work!
         <% end %><br>Come back and check again later.</p>
     </div>
 </div>

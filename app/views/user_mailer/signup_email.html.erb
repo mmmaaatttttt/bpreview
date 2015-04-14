@@ -9,7 +9,7 @@
 </head>
 
 <body style="margin: 0; padding: 0;">
-    <span style='font-size: 0; line-height: 0; height: 0; width: 0;'>You'll be first to know when we launch. Tell your friends about the Common Core Unit Blueprints and earn some cool rewards!</span>
+    <span style='font-size: 0; line-height: 0; height: 0; width: 0;'>You'll be first to know when we launch. In the meantime, why not tell your friends about the Common Core Unit Blueprints?</span>
     <table width="100%" cellspacing='0' cellpadding='0' border="0" bgcolor="#e8e9ec" style="background-color: #e8e9ec; padding: 73px 15px; margin: 0;">
         <tr>
             <td align="center">
@@ -17,7 +17,7 @@
                     <tr>
                         <td style="padding: 27px 0 27px;">
                             <center>
-                                Thanks for your interest in the Common Core Unit Blueprints. We'll let you know as soon as it's ready!
+                                Thanks for your interest. We'll let you know as soon as it's ready!
                             </center>
                         </td>
                     </tr>
@@ -54,13 +54,14 @@
                                 <tr>
                                     <td width="80" align="right">
                                         <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(Rails.application.config.action_mailer.default_url_options || "") %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Common Core Unit Blueprints" style="outline: 0; border: 0;" target="_blank">
-                                            <img src="<%= Rails.application.config.action_mailer.default_url_options %>/assets/email/facebook.jpg" alt="Share on Facebook" style="display: block; margin: 0; padding: 0; border: 0;">
+                                            <img src="<%= Rails.application.config.action_mailer.
+                                            default_url_options %>/assets/refer/fb.png" alt="Share on Facebook" style="display: block; margin: 0; padding: 0; border: 0;">
                                         </a>
                                     </td>
                                     <td width="20"></td>
                                     <td width="80">
                                         <a href="http://twitter.com/share?url=<%= CGI::escape(Rails.application.config.action_mailer.default_url_options || "") %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(@twitter_message) %>" style="outline: 0; border: 0;" target="_blank">
-                                            <img src="<%= Rails.application.config.action_mailer.default_url_options %>/assets/email/twitter.jpg" alt="Share on Twitter" style="display: block; margin: 0; padding: 0; border: 0;">
+                                            <img src="<%= Rails.application.config.action_mailer.default_url_options %>/assets/refer/twit.png" alt="Share on Twitter" style="display: block; margin: 0; padding: 0; border: 0;">
                                         </a>
                                     </td>
                                 </tr>
