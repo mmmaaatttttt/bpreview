@@ -5,12 +5,11 @@
                 <div id="thanks" class="col-sm-6">
                     <h3>Thanks for signing up!</h3>
                     <p>Want to keep the good times rolling? Spread the word!</p>
-                    <p>When your friends sign up with your link, everyone wins. Especially you.</p>
                 </div>
                 <div class="col-sm-6">
                     <div class="share-wrap">
                         <div class="copy-link"><%= root_url %>?ref=<%= @user.referral_code %></div>
-                        <% twitter_message = "#StartCommonCore with the Common Core Unit Blueprints. Excited for this project to launch!" %>
+                        <% twitter_message = "Coming soon: Common Core Unit Blueprints. Excited for this project to launch!" %>
                         <div class="social-links">
                             <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Common Core Unit Blueprints" class="fb" target="_blank"></a>
                             <div class="sep"></div>
@@ -42,14 +41,14 @@
     <div class="page-content">
 
         <% 
-            words = referrals_count == 1 ? 'friend has' : 'friends have'
+            words = referrals_count == 1 ? 'colleague has' : 'colleagues have'
         %>
 
         <p class="place">
         <% if referrals_count == 0 %>
-            <span>No</span> friends have signed up...Yet!
+            <span>No</span> colleagues have signed up...Yet! 
         <% else %>
             <span><%= referrals_count %></span> <%= words %> signed up. Nice work!
-        <% end %><br>Come back and check again later.</p>
+        <% end %><br>Come back and check again later,<br>or use the links above to tell more people about the Blueprints.</p>
     </div>
 </div>

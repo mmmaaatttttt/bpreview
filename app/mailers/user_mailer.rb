@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
 
     def signup_email(user)
         @user = user
-        @twitter_message = "#StartCommonCore with the Common Core Unit Blueprints. Excited for this project to launch!"
+        @twitter_message = "Coming soon: Common Core Unit Blueprints. Excited for this project to launch!"
 
         mail(:to => user.email, :subject => "Thanks for signing up!")
     end
