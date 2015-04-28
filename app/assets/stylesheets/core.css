@@ -104,7 +104,7 @@ html, body {
 }
 
 #introCopy {
-	padding: 50px 0 100px;
+	padding: 50px 0 80px;
 	text-align: justify;
 }
 
@@ -123,7 +123,7 @@ html, body {
 	border-bottom-left-radius: 10px;
 	padding: 10px;
 	border: none;
-	width: 200px;
+	width: 400px;
 	height: 43px;
 	display: inline;
 	font-size: 18px;
@@ -170,12 +170,8 @@ html, body {
 	color: #596375;
 }
 
-.exp-left p {
-	margin-right: 3%;
-}
-
-.exp-right p {
-	margin-left: 3%;
+.col-sm-8 p {
+	margin-bottom: 20px;
 }
 
 /* refer */
